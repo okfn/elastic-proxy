@@ -8,7 +8,7 @@ def validate_user(user):
 
 @app.route('/<user>/<type>/<key>', methods=['get', 'post', 'put', 'delete'])
 def full(user, type, key):
-    '''Anyone get anything and search but only a 
+    '''Anyone can get anything and search but only a 
        autherized user can post a new item or delete one'''
     
     resp = flask.Response('')
